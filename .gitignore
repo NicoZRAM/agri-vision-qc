@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+# Datos y resultados de entrenamiento (nunca a Git)
+data/
+runs/
+mlruns/
+*.pt
+*.pth
+*.onnx
+
+# Secretos y configuración local
+.env
+
+# Notebooks y sistema
+.ipynb_checkpoints/
+.DS_Store

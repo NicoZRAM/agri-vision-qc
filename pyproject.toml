@@ -1,0 +1,23 @@
+[project]
+name = "agri-vision-qc"
+version = "0.1.0"
+description = "Inspección visual de calidad para productos agroalimentarios"
+readme = "README.md"
+authors = [
+    { name = "Nicolás Zamorano Ramírez", email = "teleco.nicolas@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+agri-vision-qc = "agri_vision_qc:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+environments = [
+    "sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
