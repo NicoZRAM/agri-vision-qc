@@ -7,7 +7,10 @@ authors = [
     { name = "Nicolás Zamorano Ramírez", email = "teleco.nicolas@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+]
 
 [project.scripts]
 agri-vision-qc = "agri_vision_qc:main"

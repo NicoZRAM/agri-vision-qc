@@ -16,3 +16,9 @@ git clone git@github.com:NicoZRAM/agri-vision-qc.git
 cd agri-vision-qc
 uv sync
 ```
+
+## Comprobar el dispositivo de cómputo
+
+```bash
+uv run python -m agri_vision_qc.device
+```
