@@ -8,10 +8,11 @@ wheels/
 
 # Virtual environments
 .venv
-# Datos y resultados de entrenamiento (nunca a Git)
-data/
-runs/
-mlruns/
+
+# Datos y resultados de entrenamiento (solo en la raíz del proyecto; nunca a Git)
+/data/
+/runs/
+/mlruns/
 *.pt
 *.pth
 *.onnx
